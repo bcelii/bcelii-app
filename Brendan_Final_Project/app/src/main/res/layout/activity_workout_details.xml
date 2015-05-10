@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="fontenotsquad.stablestudy.WorkoutDetails">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#E60000"
+            android:padding="20sp"
+            android:id="@+id/linearLayout2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Workout"
+                android:id="@+id/Title"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="44dp"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2">
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Workout Type:"
+                android:padding="10dip"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:text="placeholder"
+                android:gravity="right"
+                android:id="@+id/workoutType"
+                android:padding="10dip" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_span="2"
+                android:text=""
+                android:id="@+id/description"
+                android:padding="10dip"
+            />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="Location:"
+                android:padding="20dip"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:text="placeholder"
+                android:gravity="right"
+                android:id="@+id/location"
+                android:padding="10dip" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="Time:"
+                android:padding="20dip"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:text="placeholder"
+                android:gravity="right"
+                android:id="@+id/time"
+                android:padding="10dip" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="Leader: "
+                android:padding="20dip"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:text="placeholder"
+                android:gravity="right"
+                android:id="@+id/leader"
+                android:padding="10dip" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/backButton"
+                android:onClick="goBack2"
+                android:layout_column="1" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>
